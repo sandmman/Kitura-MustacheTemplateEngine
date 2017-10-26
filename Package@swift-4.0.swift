@@ -29,13 +29,12 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/IBM-Swift/GRMustache.swift.git", .upToNextMinor(from: "1.7.0")),
         .package(url: "https://github.com/IBM-Swift/Kitura-TemplateEngine.git", .upToNextMinor(from: "1.7.0"))
     ],
     targets: [
         .target(
             name: "KituraMustache",
-            dependencies: [ "Mustache", "KituraTemplateEngine" ]
+            dependencies: [ "KituraTemplateEngine" ]
         )
     ]
 )

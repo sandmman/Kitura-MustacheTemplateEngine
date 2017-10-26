@@ -15,9 +15,6 @@
  **/
 
 import KituraTemplateEngine
-#if !os(Linux) || swift(>=3.1)
-import Mustache
-#endif
 
 public class MustacheTemplateEngine: TemplateEngine {
     public var fileExtension: String { return "mustache" }
